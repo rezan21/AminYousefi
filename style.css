@@ -34,6 +34,10 @@ body {
   padding-bottom: 10px;
   /* border: 1px black solid; */
 }
+
+#logo, #Profile_Picture, #home-image{
+  width: 100%;
+}
 .home_grid {
   display: grid;
   grid-template-columns: auto 3fr;
@@ -42,6 +46,10 @@ body {
 
 ul {
   list-style: none;
+}
+
+h1{
+  margin-bottom: 30px;
 }
 .left_home {
   display: grid;
@@ -59,13 +67,13 @@ ul {
   line-height: 22px;
 }
 
-.left_home ul li a:link, .left_home ul li a:visited{
+.left_home ul li a:link, .left_home ul li a:visited, .contact_info a:link, .contact_info a:visited{
 
   color: var(--main-color);
   text-decoration: none;
 }
 
-.left_home ul li a:hover, #home ul li a:active {
+.left_home ul li a:hover, #home ul li a:active, .contact_info a:hover, .contact_info a:active{
   color: var(--secondry-color);
   -webkit-transition: all ease 70ms;
   transition: all ease 70ms;
@@ -103,10 +111,13 @@ ul {
 .right_home{
   max-width: 1200px;
 }
-
-#logo, #Profile_Picture, #home-image{
-  width: 100%;
+.contact_info p{
+  margin-bottom: 20px;
 }
+.contact_info a{
+  display: block;
+}
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #footer {
   position: absolute;
