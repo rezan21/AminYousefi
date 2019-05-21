@@ -39,6 +39,7 @@ body {
 #logo, #Profile_Picture, #home-image{
   width: 100%;
 }
+
 .home_grid {
   display: grid;
   grid-template-columns: auto 3fr;
@@ -152,6 +153,8 @@ grid-template-columns: 1fr 1fr;}
 .cv_text{
   line-height: 35px;
 }
+
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #footer {
   position: absolute;
