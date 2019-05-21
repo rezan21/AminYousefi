@@ -1,6 +1,6 @@
 :root {
   --main-color: #1b1b1b;
-  --secondry-color: #6f6f6f;
+  --secondry-color: #aaa;
 }
 
 * {
@@ -58,9 +58,9 @@ h1{
   width: 300px;
   min-width: 300px;
   max-width: 300px;
-  height: 700px;
-  max-height: 700px;
-  min-height: 700px;
+  height: 650px;
+  max-height: 650px;
+  min-height: 650px;
 }
 
 .left_home li {
@@ -116,6 +116,15 @@ h1{
 }
 .contact_info a{
   display: block;
+}
+
+.bl_contaier{
+  position: relative;
+}
+
+.bl_contaier ul{
+  position: absolute;
+  bottom: 0;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
