@@ -18,6 +18,7 @@ body {
   background-color: #FCFCFC;
   /* position: relative; */
   /* overflow-x: hidden; */
+
 }
 
 #page-container {
@@ -50,6 +51,7 @@ ul {
 
 h1{
   margin-bottom: 30px;
+  font-weight: 300;
 }
 .left_home {
   display: grid;
@@ -111,6 +113,9 @@ h1{
 .right_home{
   max-width: 1200px;
 }
+/* .content_info{
+  display: relative;
+} */
 .contact_info p{
   margin-bottom: 20px;
 }
@@ -122,11 +127,31 @@ h1{
   position: relative;
 }
 
+
 .bl_contaier ul{
   position: absolute;
   bottom: 0;
 }
 
+.cv_contact{
+  position: relative;
+}
+.dl_button_on_cv{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: red;
+}
+#cv h2{
+  font-weight: bold;
+  margin: 34px 0 6px 0;
+}
+#cv span{
+  font-weight: bold;
+}
+.cv_text{
+  line-height: 35px;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #footer {
   position: absolute;
