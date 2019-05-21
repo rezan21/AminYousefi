@@ -134,14 +134,14 @@ h1{
 }
 
 .cv_contact{
-  position: relative;
-}
-.dl_button_on_cv{
+display: grid;
+grid-template-columns: 1fr 1fr;}
+/* .dl_button_on_cv{
   position: absolute;
   right: 0;
   top: 0;
   color: red;
-}
+} */
 #cv h2{
   font-weight: bold;
   margin: 34px 0 6px 0;
