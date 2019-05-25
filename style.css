@@ -157,7 +157,6 @@ h1 {
   line-height: 35px;
 }
 .album_container {
-    position: absolute;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
