@@ -55,7 +55,7 @@ ul {
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 300;
 }
 
@@ -166,6 +166,11 @@ h1 {
 .album_container img {
   width: 99%;
   height: auto;
+}
+
+.album_description{
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* .horizontal {
