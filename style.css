@@ -65,8 +65,8 @@ ul li a:link, ul li a:visited, a:link, a:visited {
 
 ul li a:hover, ul li a:active, a:hover, a:active {
   color: var(--secondry-color);
-  -webkit-transition: all ease 70ms;
-  transition: all ease 70ms;
+  -webkit-transition: all ease 150ms;
+  transition: all ease 150ms;
 }
 
 #social_media {
