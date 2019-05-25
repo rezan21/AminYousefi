@@ -165,7 +165,7 @@ h1 {
     grid-auto-flow: dense;
 }
 .album_container img{
-  width: 100%;
+  width: 99%;
   height: auto;
 }
 /* .horizontal {
