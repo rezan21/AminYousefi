@@ -29,16 +29,14 @@ body {
   min-height: 100vh;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 35px 20px;
 }
 
-/* wraps everything except footer */
 
 #content-wrap {
   /* Footer height */
   /* padding-bottom: 2.5rem; */
   padding-bottom: 10px;
-  /* border: 1px black solid; */
 }
 
 #Profile_Picture, #home-image, #logo {
@@ -71,7 +69,7 @@ ul li a:hover, ul li a:active, a:hover, a:active {
 
 #social_media {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
 }
 
 #social_media li {
@@ -95,11 +93,6 @@ ul li a:hover, ul li a:active, a:hover, a:active {
   grid-auto-rows: 150px auto;
   grid-gap: 90px;
   width: 240px;
-  min-width: 240px;
-  max-width: 240px;
-  height: 650px;
-  max-height: 650px;
-  min-height: 650px;
   position: fixed;
 }
 
