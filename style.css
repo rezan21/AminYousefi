@@ -14,8 +14,6 @@
   box-sizing: border-box;
 }
 
-
- 
 body {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1rem;
@@ -34,14 +32,15 @@ body {
   padding: 35px 20px;
 }
 
-
 #content-wrap {
   /* Footer height */
   /* padding-bottom: 2.5rem; */
   padding-bottom: 10px;
 }
 
-#Profile_Picture, #home-image, #logo {
+#Profile_Picture,
+#home-image,
+#logo {
   width: 100%;
 }
 
@@ -54,16 +53,22 @@ h1 {
   font-weight: 300;
 }
 
-i {
+/* i {
   line-height: 22px;
-}
+} */
 
-ul li a:link, ul li a:visited, a:link, a:visited {
+ul li a:link,
+ul li a:visited,
+a:link,
+a:visited {
   color: var(--main-color);
   text-decoration: none;
 }
 
-ul li a:hover, ul li a:active, a:hover, a:active {
+ul li a:hover,
+ul li a:active,
+a:hover,
+a:active {
   color: var(--secondry-color);
   -webkit-transition: all ease 150ms;
   transition: all ease 150ms;
@@ -92,7 +97,7 @@ ul li a:hover, ul li a:active, a:hover, a:active {
 
 .left_home {
   display: grid;
-  grid-auto-rows: 150px auto;
+  grid-template-rows: 150px auto;
   grid-gap: 90px;
   width: 240px;
   position: fixed;
@@ -118,7 +123,7 @@ ul li a:hover, ul li a:active, a:hover, a:active {
 
 /************ Contact ************/
 
-.contact_text{
+.contact_text {
   margin-bottom: 20px;
 }
 
@@ -126,13 +131,13 @@ ul li a:hover, ul li a:active, a:hover, a:active {
   display: block;
 }
 
+/************ CV ************/
 .cv_contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-/************ CV ************/
-#cv *:not(a){
+#cv *:not(a) {
   color: #353535;
 }
 #cv h2 {
@@ -189,15 +194,17 @@ ul li a:hover, ul li a:active, a:hover, a:active {
   /* Footer height */
   text-align: center;
   padding-right: 40px;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: 200;
 }
 
-#footer a:link, #footer a:visited {
+#footer a:link,
+#footer a:visited {
   color: var(--main-color);
 }
 
-#footer a:hover, #footer a:active {
+#footer a:hover,
+#footer a:active {
   color: green;
 }
 
