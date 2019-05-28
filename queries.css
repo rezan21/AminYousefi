@@ -36,6 +36,7 @@
   .lists {
     display: none;
   }
+
   .mobile-menu {
     display: grid;
   }
@@ -83,7 +84,31 @@
     margin: 10px 0;
     font-size: 130%;
   }
+  /************ HOMEPAGE ON PHONE ************/
 
+  .homepage .big-logo {
+    display: block;
+    padding: 40px 30px 0 30px;
+  }
+  .homepage .lists {
+    display: block;
+  }
+  .homepage .lists li {
+    margin: 7px 0;
+    font-size: 140%;
+  }
+
+  .homepage .left_home {
+    grid-gap: 0px;
+  }
+
+  .homepage .second_ul {
+    padding-top: 0px;
+  }
+
+  .homepage #social_media li {
+    margin: 0 0px;
+  }
   /************ Album ************/
 
   .album_container img {
