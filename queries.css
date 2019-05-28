@@ -1,0 +1,176 @@
+@media only screen and (max-device-width: 600px),
+  screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+
+  #page-container {
+    padding: 10px 0px;
+    margin: 20px 0 0 0;
+  }
+  #content-wrap {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    padding-bottom: 50px;
+  }
+  .left_home {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    width: 100%;
+    position: static;
+  }
+  .right_home {
+    margin-left: 0;
+  }
+
+  .right_home p {
+    padding: 0px 5px;
+  }
+
+  /************ Mobile Nav Bar ************/
+
+  .big-logo {
+    display: none;
+  }
+  .lists {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: grid;
+  }
+
+  .second-menu li {
+    margin: 30px 0;
+    font-size: 150%;
+  }
+  .mobile-menu a:hover {
+    color: #eee;
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  a:link,
+  a:visited {
+    color: var(--main-color);
+  }
+
+  a:hover,
+  a:active {
+    color: var(--main-color);
+    -webkit-transition: none;
+    transition: none;
+  }
+  #social_media {
+    margin: 20px 0;
+    position: static;
+    bottom: none;
+    font-size: 120%;
+  }
+  #social_media li {
+    margin: 0 20px;
+  }
+
+  #social_media li:hover {
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  .contact_info a {
+    text-decoration: underline;
+    margin: 10px 0;
+    font-size: 130%;
+  }
+  /************ HOMEPAGE ON PHONE ************/
+
+  .homepage .big-logo {
+    display: block;
+    padding: 40px 30px 0 30px;
+  }
+  .homepage .lists {
+    display: block;
+  }
+  .homepage .lists li {
+    margin: 7px 0;
+    font-size: 140%;
+  }
+
+  .homepage .left_home {
+    grid-gap: 0px;
+  }
+
+  .homepage .second_ul {
+    padding-top: 0px;
+  }
+
+  .homepage #social_media li {
+    margin: 0 0px;
+  }
+  /************ Album ************/
+
+  .album_container img {
+    width: 100%;
+  }
+
+  /************ About ************/
+
+  #about .showcase {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto 1fr;
+    grid-gap: 10px;
+  }
+
+  /************ CV ************/
+
+  #cv {
+    text-align: left;
+  }
+  #cv h2 {
+    padding: 0 4px;
+  }
+
+  .cv_contact {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+  }
+
+  .cv_contact .contact_info,
+  .myDlBtn,
+  #cv h1 {
+    text-align: center;
+  }
+  .myDlBtn {
+    margin: 10px 0 0 0;
+  }
+
+  /************ Contact ************/
+
+  #contact .showcase {
+    grid-template-areas: "c " "m";
+  }
+
+  /************************************ FOOTER ************************************/
+
+  #footer {
+    height: 2rem;
+    /* Footer height */
+    padding-right: 0px;
+  }
+  #footer a {
+    text-decoration: underline;
+  }
+
+  #footer a:hover,
+  #footer a:active {
+    color: var(--main-color);
+  }
+
+  .btn {
+    padding: 20px 30px;
+  }
+}

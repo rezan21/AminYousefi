@@ -1,85 +1,247 @@
 <!-- Development and Design by Reza N -->
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Countryside | Amin Yousefi</title>
+    <link rel="icon" type="image/jpg" href="resources/logos/favicon.jpg" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="queries.css" />
 
-<head>
-  <title>Countryside | Amin Yousefi</title>
-  <link rel="icon" type="image/jpg" href="resources/logos/favicon.jpg">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:200&display=swap" rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow+Condensed:200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body id="home">
-  <div id="page-container">
-    <div id="content-wrap">
-      <div class="left_home">
-        <!-- first element -->
-        <div class="">
-          <a href="index.html" title="Go To Home Page"><img id="logo" src="resources/logos/LOGO.png" alt="AminYousefi Logo"></a>
-        </div>
-
-        <!--  second element-->
-        <div class="lists">
-          <ul class="first_ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="countryside.html">Countryside</a></li>
-            <li><a href="untitled_photographs.html">Untitled Photographs</a></li>
-            <li><a href="inverse.html">Inverse</a></li>
-          </ul>
-          <ul class="second_ul">
-            <li><a href="about.html">About</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-
+  <body id="home">
+    <div class="mobile-menu">
+      <!-- Top bar = line logo + hamburger icon -->
+      <div>
+        <a href="index.html"
+          ><img
+            id="line_logo"
+            src="resources/logos/line_logo_w.png"
+            alt="line_logo"
+        /></a>
+        <a class="js--nav hamburger" href="#"
+          ><img src="menu.png" width="50px" alt="menu"
+        /></a>
       </div>
-      <ul id="social_media">
-        <li><a href="https://twitter.com/awinology" title="Follow me on Twitter" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="https://instagram.com/awinology" title="Follow me on Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/awin/" title="Find me on LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://www.facebook.com/aWinologys/" title="Find me on Facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
-      </ul>
-      <!-- left_home ENDS  -->
 
-
-      <div class="right_home">
-        <h1>Countryside</h1>
-        <p class="album_description">
-          Iranian architecture has been prevented internationally by its own style. The new constructions are neither modern or don't have a taste of the new style in the suburbs. They are placed in the middle of nondescript, repetition​ and not having visual attraction
-          and innovation.
-        </p>
-
-        <div class="album_container">
-          <!-- COMBAK: src values -->
-          <div> <a href="#">  <img  src="resources/countryside/1.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/2.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/3.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/4.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/5.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/6.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/7.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/8.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/9.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/10.jpg" alt="Photo from Countryside album"> </a></div>
-          <div> <a href="#">  <img  src="resources/countryside/11.jpg" alt="Photo from Countryside album"> </a></div>
-
-
-        </div>
-      </div>
-      <!-- right_home ENDS -->
-
+      <nav class="second-menu js--main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="countryside.html">Countryside</a></li>
+          <li><a href="untitled_photographs.html">Untitled Photographs</a></li>
+          <li><a href="inverse.html">Inverse</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <!-- #content-wrap ENDS -->
+    <!-- mobile-menu ENDS  -->
 
-    <footer id="footer"> Designed by <a target="_blank" href="https://www.linkedin.com/in/rezanaghshineh">Reza</a> | All rights reserved © 2019 </footer>
+    <div id="page-container">
+      <div id="content-wrap">
+        <!-- Normal menu  -->
+        <div class="left_home">
+          <!-- first element -->
+          <div class="big-logo">
+            <a href="index.html" title="Go To Home Page"
+              ><img
+                id="logo"
+                src="resources/logos/LOGO.png"
+                alt="AminYousefi Logo"
+            /></a>
+          </div>
 
-  </div>
-  <!-- #page-container ENDS -->
+          <!--  second element-->
+          <div class="lists">
+            <ul class="first_ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="countryside.html">Countryside</a></li>
+              <li>
+                <a href="untitled_photographs.html">Untitled Photographs</a>
+              </li>
+              <li><a href="inverse.html">Inverse</a></li>
+            </ul>
+            <ul class="second_ul">
+              <li><a href="about.html">About</a></li>
+              <li><a href="cv.html">CV</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Normal Menu ENDS  -->
 
-</body>
+        <ul id="social_media">
+          <li>
+            <a
+              href="https://twitter.com/awinology"
+              title="Follow me on Twitter"
+              target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/awinology"
+              title="Follow me on Instagram"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/awin/"
+              title="Find me on LinkedIn"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/aWinologys/"
+              title="Find me on Facebook"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- left_home ENDS  -->
 
+        <div class="right_home">
+          <h1>Countryside</h1>
+          <p class="album_description">
+            Iranian architecture has been prevented internationally by its own
+            style. The new constructions are neither modern or don't have a
+            taste of the new style in the suburbs. They are placed in the middle
+            of nondescript, repetition​ and not having visual attraction and
+            innovation.
+          </p>
+
+          <div class="album_container">
+            <!-- COMBAK: src values -->
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/1.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/2.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/3.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/4.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/5.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/6.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/7.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/8.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/9.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/10.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="resources/countryside/11.jpg"
+                  alt="Photo from Countryside album"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- right_home ENDS -->
+      </div>
+      <!-- #content-wrap ENDS -->
+
+      <footer id="footer">
+        Designed by
+        <a
+          title="Developer LinkedIn"
+          target="_blank"
+          href="https://www.linkedin.com/in/rezanaghshineh"
+          >Reza</a
+        >
+        | All rights reserved © 2019
+      </footer>
+    </div>
+    <!-- #page-container ENDS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
