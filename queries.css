@@ -1,32 +1,14 @@
-@media only screen and (max-device-width: 700px),
-  screen and (max-width: 700px) {
+@media only screen and (max-device-width: 600px),
+  screen and (max-width: 600px) {
   body {
-    font-size: 120%;
     text-align: center;
   }
-  #logo {
-    padding: 20px;
-  }
 
-  ul li {
-    margin: 10px 0px;
-  }
-
-  #social_media {
-    position: static;
-    bottom: none;
-  }
-
-  #footer {
-    height: 2rem;
-    /* Footer height */
-    padding-right: 0px;
-  }
   #page-container {
     padding: 10px 0px;
+    margin: 20px 0 0 0;
   }
   #content-wrap {
-    /* color: red; */
     display: grid;
     grid-template-rows: repeat(3, auto);
     padding-bottom: 50px;
@@ -46,6 +28,70 @@
     padding: 0px 5px;
   }
 
+  /************ Mobile Nav Bar ************/
+
+  .big-logo {
+    display: none;
+  }
+  .lists {
+    display: none;
+  }
+  .mobile-menu {
+    display: grid;
+  }
+
+  .second-menu li {
+    margin: 30px 0;
+    font-size: 150%;
+  }
+  .mobile-menu a:hover {
+    color: #eee;
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  a:link,
+  a:visited {
+    color: var(--main-color);
+  }
+
+  a:hover,
+  a:active {
+    color: var(--main-color);
+    -webkit-transition: none;
+    transition: none;
+  }
+  #social_media {
+    margin: 20px 0;
+    position: static;
+    bottom: none;
+    font-size: 120%;
+  }
+  #social_media li {
+    margin: 0 20px;
+  }
+
+  #social_media li:hover {
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  .contact_info a {
+    text-decoration: underline;
+    margin: 10px 0;
+    font-size: 130%;
+  }
+
+  /************ Album ************/
+
+  .album_container img {
+    width: 100%;
+  }
+
+  /************ About ************/
+
   #about .showcase {
     display: grid;
     grid-template-columns: none;
@@ -53,9 +99,7 @@
     grid-gap: 10px;
   }
 
-  .album_container img {
-    width: 100%;
-  }
+  /************ CV ************/
 
   #cv {
     text-align: left;
@@ -77,5 +121,31 @@
   }
   .myDlBtn {
     margin: 10px 0 0 0;
+  }
+
+  /************ Contact ************/
+
+  #contact .showcase {
+    grid-template-areas: "c " "m";
+  }
+
+  /************************************ FOOTER ************************************/
+
+  #footer {
+    height: 2rem;
+    /* Footer height */
+    padding-right: 0px;
+  }
+  #footer a {
+    text-decoration: underline;
+  }
+
+  #footer a:hover,
+  #footer a:active {
+    color: var(--main-color);
+  }
+
+  .btn {
+    padding: 20px 30px;
   }
 }

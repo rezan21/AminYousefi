@@ -13,6 +13,7 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap"
       rel="stylesheet"
@@ -24,11 +25,40 @@
   </head>
 
   <body id="home">
+    <div class="mobile-menu">
+      <!-- Top bar = line logo + hamburger icon -->
+      <div>
+        <a href="index.html"
+          ><img
+            id="line_logo"
+            src="resources/logos/line_logo_w.png"
+            alt="line_logo"
+        /></a>
+        <a class="js--nav hamburger" href="#"
+          ><img src="menu.png" width="50px" alt="menu"
+        /></a>
+      </div>
+
+      <nav class="second-menu js--main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="countryside.html">Countryside</a></li>
+          <li><a href="untitled_photographs.html">Untitled Photographs</a></li>
+          <li><a href="inverse.html">Inverse</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- mobile-menu ENDS  -->
+
     <div id="page-container">
       <div id="content-wrap">
+        <!-- Normal menu  -->
         <div class="left_home">
           <!-- first element -->
-          <div class="">
+          <div class="big-logo">
             <a href="index.html" title="Go To Home Page"
               ><img
                 id="logo"
@@ -54,6 +84,8 @@
             </ul>
           </div>
         </div>
+        <!-- Normal Menu ENDS  -->
+
         <ul id="social_media">
           <li>
             <a
@@ -111,6 +143,7 @@
                 target="_blank"
                 id="dl_btn"
                 class="btn dl_button_on_cv"
+                title="Download CV"
               >
                 <span class="btn-inner">Download CV</span>
               </a>
@@ -260,12 +293,18 @@
 
       <footer id="footer">
         Designed by
-        <a target="_blank" href="https://www.linkedin.com/in/rezanaghshineh"
+        <a
+          title="Developer LinkedIn"
+          target="_blank"
+          href="https://www.linkedin.com/in/rezanaghshineh"
           >Reza</a
         >
         | All rights reserved © 2019
       </footer>
     </div>
     <!-- #page-container ENDS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

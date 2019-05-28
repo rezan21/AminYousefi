@@ -44,6 +44,10 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -52,27 +56,65 @@ h1 {
   margin-bottom: 20px;
   font-weight: 300;
 }
+/************ Mobile Nav Bar ************/
 
-/* i {
-  line-height: 22px;
-} */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  padding: 6px 10px;
+  z-index: 100;
+}
+/* dismiss toggle */
+.second-menu {
+  display: none;
+  z-index: 100;
+}
 
-ul li a:link,
-ul li a:visited,
+#line_logo {
+  width: 200px;
+  float: left;
+}
+
+.hamburger img {
+  padding: 15px 7px 10px 7px;
+  position: absolute;
+  right: 0;
+}
+/************ links animation/effects ************/
+
+.mobile-menu a:visited,
+.mobile-menu a:link,
+.mobile-menu a:active {
+  color: #eee;
+}
+.mobile-menu a:hover {
+  color: var(--secondry-color);
+  -webkit-transition: all ease 150ms;
+  transition: all ease 150ms;
+}
+
 a:link,
 a:visited {
   color: var(--main-color);
-  text-decoration: none;
 }
 
-ul li a:hover,
-ul li a:active,
 a:hover,
 a:active {
   color: var(--secondry-color);
   -webkit-transition: all ease 150ms;
   transition: all ease 150ms;
 }
+#social_media li:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+/************ Social Media ************/
 
 #social_media {
   position: fixed;
@@ -86,14 +128,7 @@ a:active {
   font-size: 150%;
 }
 
-#social_media li:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-}
-
-/************ LEFT side = menu ************/
+/************ LEFT side = MENU ************/
 
 .left_home {
   display: grid;
@@ -112,47 +147,6 @@ a:active {
 .right_home {
   margin-left: 300px;
 }
-
-/************ About ************/
-
-#about .showcase {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-}
-
-/************ Contact ************/
-
-.contact_text {
-  margin-bottom: 20px;
-}
-
-.contact_info a {
-  display: block;
-}
-
-/************ CV ************/
-.cv_contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#cv *:not(a) {
-  color: #353535;
-}
-#cv h2 {
-  font-weight: bold;
-  margin: 34px 0 6px 0;
-}
-
-#cv span {
-  font-weight: bold;
-}
-
-.cv_text {
-  line-height: 35px;
-}
-
 /************ ALBUMS ************/
 
 .album_container {
@@ -184,8 +178,57 @@ a:active {
     grid-row: span 2;
 } */
 
-/************************************ FOOTER ************************************/
+/************ About ************/
 
+#about .showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+/************ CV ************/
+
+.cv_contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#cv *:not(a) {
+  color: #353535;
+}
+#cv h2 {
+  font-weight: bold;
+  margin: 34px 0 6px 0;
+}
+
+#cv span {
+  font-weight: bold;
+}
+
+.cv_text {
+  line-height: 35px;
+}
+
+/************ Contact ************/
+#contact .showcase {
+  display: grid;
+  grid-template-areas: "m c";
+  grid-gap: 50px;
+}
+.map {
+  grid-area: m;
+}
+.home_contact {
+  grid-area: c;
+}
+
+.contact_text {
+  margin-bottom: 20px;
+}
+.contact_info a {
+  display: block;
+}
+/************************************ FOOTER ************************************/
 #footer {
   position: absolute;
   bottom: 0;
@@ -197,19 +240,15 @@ a:active {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 200;
 }
-
 #footer a:link,
 #footer a:visited {
   color: var(--main-color);
 }
-
 #footer a:hover,
 #footer a:active {
   color: green;
 }
-
 /************************************ Download button ************************************/
-
 #dl_btn {
   margin-top: 50px;
   color: black;
@@ -218,7 +257,6 @@ a:active {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
 }
-
 .btn {
   display: inline-block;
   padding: 13px 20px;
@@ -235,7 +273,6 @@ a:active {
   -webkit-transition: color 0.1s linear 0.05s;
   transition: color 0.1s linear 0.05s;
 }
-
 .btn::before {
   content: "";
   display: block;
@@ -250,23 +287,19 @@ a:active {
   -webkit-transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
   transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
 }
-
 .btn::after {
   -webkit-transition: border 0.1s linear 0.05s;
   transition: border 0.1s linear 0.05s;
 }
-
 .btn .btn-inner {
   position: relative;
   z-index: 2;
 }
-
 .btn:hover {
   color: #373737;
   -webkit-transition: color 0.1s linear 0s;
   transition: color 0.1s linear 0s;
 }
-
 .btn:hover::before {
   top: 0;
   height: 100%;
@@ -274,7 +307,6 @@ a:active {
   -webkit-transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
   transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
 }
-
 .btn:hover::after {
   border-color: #373737;
   -webkit-transition: border 0.1s linear 0s;
