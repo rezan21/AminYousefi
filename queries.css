@@ -1,3 +1,73 @@
+/************ ************ ************ ************
+******************* Small WINDOWS  *******************
+************ ************ ************ ************/
+@media only screen and (max-device-width: 900px),
+  screen and (max-width: 900px) {
+  /************ Whole page = left + right  ************/
+
+  #about .showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .left_home {
+    display: grid;
+    grid-template-rows: 130px auto;
+    grid-gap: 30px;
+    width: 200px;
+  }
+
+  .second_ul {
+    padding-top: 10px;
+  }
+
+  .right_home {
+    margin-left: 220px;
+  }
+
+  /************ About ************/
+
+  #about .showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+  /************ Contact ************/
+
+  #contact .showcase {
+    display: grid;
+    grid-template-areas: none;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+}
+/************ ************ ************ ************
+******************* Tablets  *******************
+************ ************ ************ ************/
+
+@media only screen and (max-device-width: 780px),
+  screen and (max-width: 780px) {
+  /************ About ************/
+
+  #about .showcase {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  /************ Contact ************/
+
+  #contact .showcase {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-areas: "c " "m";
+    grid-gap: 20px;
+  }
+}
+/************ ************ ************ ************
+******************* MOBILE  *******************
+************ ************ ************ ************/
 @media only screen and (max-device-width: 600px),
   screen and (max-width: 600px) {
   body {
@@ -96,14 +166,14 @@
   }
   .homepage .big-logo {
     display: block;
-    padding: 40px 30px 10px 30px;
+    padding: 10px 30px 10px 30px;
     width: 100%;
   }
   .homepage .lists {
     display: block;
   }
   .homepage .lists li {
-    margin: 7px 0;
+    margin: 10px 0;
     font-size: 140%;
   }
 
@@ -111,7 +181,7 @@
     grid-gap: 0px;
   }
   .homepage #social_media {
-    margin: 0 0 10px 0;
+    margin: 15px 0 10px 0;
   }
   .homepage .second_ul {
     padding-top: 0px;
@@ -163,9 +233,14 @@
 
   #contact .showcase {
     grid-template-areas: "c " "m";
+    grid-template-columns: none;
   }
 
-  /************************************ FOOTER ************************************/
+  .map {
+    height: 350px;
+  }
+
+  /************ Footer ************/
 
   #footer {
     height: 2rem;
@@ -183,5 +258,19 @@
 
   .btn {
     padding: 20px 30px;
+  }
+}
+
+/************ ************ ************ ************
+******************* LANDSCAPE MODE  *******************
+************ ************ ************ ************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .second-menu li {
+    margin: 10px 0;
+    font-size: 140%;
+  }
+
+  .second-menu {
+    height: 100vh;
   }
 }
