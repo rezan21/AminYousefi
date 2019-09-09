@@ -21,7 +21,7 @@
 				$msgClass = 'alert-danger';
 			} else {
 				// Passed
-				$toEmail = 'support@traversymedia.com';
+				$toEmail = 'mail@aminyousefi.com';
 				$subject = 'Contact Request From '.$name;
 				$body = '<h2>Contact Request</h2>
 					<h4>Name</h4><p>'.$name.'</p>
@@ -220,8 +220,7 @@
                   <label>Message</label>
                   <textarea
                     name="message"
-                    class="form-control textarea"
-                  ></textarea>
+                    class="form-control textarea"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
                 </div>
                 <br />
                 <!-- <button type="submit" name="submit" class="btn btn-primary">Submit</button> -->
