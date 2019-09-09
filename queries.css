@@ -1,3 +1,43 @@
+@media only screen and (max-device-width: 950px),
+  screen and (max-width: 950px) {
+  /* .right_home {
+    margin-left: 220px;
+  } */
+
+  #contact .showcase {
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    grid-template-areas: 'f c';
+    grid-gap: 10px;
+  }
+
+  .form-control {
+    display: block;
+    /* width: 600px; */
+    width: 90%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .textarea {
+    width: 90%;
+    height: 300px;
+    min-height: 100px;
+    max-height: 500px;
+    min-width: 300px;
+    max-width: 690px;
+  }
+}
+
 /************ ************ ************ ************
 ******************* Small WINDOWS  *******************
 ************ ************ ************ ************/
@@ -10,6 +50,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
   }
+
   .left_home {
     display: grid;
     grid-template-rows: 130px auto;
@@ -32,15 +73,17 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
   }
+
   /************ Contact ************/
 
   #contact .showcase {
-    display: grid;
-    grid-template-areas: none;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
+    /* grid-template-areas: none; */
+    /* grid-template-columns: 1fr 1fr; */
     grid-gap: 15px;
   }
 }
+
 /************ ************ ************ ************
 ******************* Tablets  *******************
 ************ ************ ************ ************/
@@ -60,11 +103,12 @@
 
   #contact .showcase {
     display: grid;
-    grid-template-columns: none;
-    grid-template-areas: "c " "m";
+    /* grid-template-columns: none; */
+    grid-template-areas: 'c ' 'f';
     grid-gap: 20px;
   }
 }
+
 /************ ************ ************ ************
 ******************* MOBILE  *******************
 ************ ************ ************ ************/
@@ -80,11 +124,13 @@
     padding: 0;
     margin: 0;
   }
+
   #content-wrap {
     display: grid;
     grid-template-rows: repeat(3, auto);
     padding-bottom: 50px;
   }
+
   .left_home {
     display: grid;
     grid-template-rows: auto auto;
@@ -92,6 +138,7 @@
     width: 100%;
     position: static;
   }
+
   .right_home {
     margin-left: 0;
   }
@@ -105,6 +152,7 @@
   .big-logo {
     display: none;
   }
+
   .lists {
     display: none;
   }
@@ -117,6 +165,7 @@
     margin: 30px 0;
     font-size: 150%;
   }
+
   .mobile-menu a:hover {
     color: #eee;
     -webkit-transition: none;
@@ -134,12 +183,14 @@
     -webkit-transition: none;
     transition: none;
   }
+
   #social_media {
     margin: 50px 0 30px 0;
     position: static;
     bottom: none;
     font-size: 120%;
   }
+
   #social_media li {
     margin: 0 20px;
   }
@@ -156,22 +207,27 @@
     margin: 10px 0;
     font-size: 130%;
   }
+
   /************ HOMEPAGE ON PHONE ************/
 
   .left_home {
     position: relative;
   }
+
   .homepage .mobile-menu {
     display: none;
   }
+
   .homepage .big-logo {
     display: block;
     padding: 10px 30px 10px 30px;
     width: 100%;
   }
+
   .homepage .lists {
     display: block;
   }
+
   .homepage .lists li {
     margin: 10px 0;
     font-size: 140%;
@@ -180,9 +236,11 @@
   .homepage .left_home {
     grid-gap: 0px;
   }
+
   .homepage #social_media {
     margin: 15px 0 10px 0;
   }
+
   .homepage .second_ul {
     padding-top: 0px;
   }
@@ -190,6 +248,7 @@
   .homepage #social_media li {
     margin: 0 20px;
   }
+
   /************ Album ************/
 
   .album_container img {
@@ -210,6 +269,7 @@
   #cv {
     text-align: left;
   }
+
   #cv h2 {
     padding: 0 4px;
   }
@@ -225,6 +285,7 @@
   #cv h1 {
     text-align: center;
   }
+
   .myDlBtn {
     margin: 10px 0 0 0;
   }
@@ -232,12 +293,8 @@
   /************ Contact ************/
 
   #contact .showcase {
-    grid-template-areas: "c " "m";
+    grid-template-areas: 'c ' 'f';
     grid-template-columns: none;
-  }
-
-  .map {
-    height: 350px;
   }
 
   /************ Footer ************/
@@ -247,6 +304,7 @@
     /* Footer height */
     padding-right: 0px;
   }
+
   #footer a {
     text-decoration: underline;
   }
@@ -256,8 +314,53 @@
     color: var(--main-color);
   }
 
+  .footer-contact {
+    display: none;
+  }
+
   .btn {
     padding: 20px 30px;
+  }
+
+  .alert {
+    position: relative;
+    /* height: 40px; */
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0;
+  }
+
+  .form-control {
+    display: block;
+    /* width: 600px; */
+    width: 95%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 0 auto;
+  }
+
+  .textarea {
+    width: 95%;
+    height: 300px;
+    min-height: 100px;
+    max-height: 500px;
+    min-width: 100px;
+    max-width: 690px;
+  }
+
+  .btn-on-contact {
+    margin: 0;
+    margin-bottom: 100px !important;
   }
 }
 

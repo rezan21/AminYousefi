@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.05em;
   color: var(--main-color);
@@ -56,6 +56,7 @@ h1 {
   margin-bottom: 20px;
   font-weight: 300;
 }
+
 /************ Mobile Nav Bar ************/
 
 .mobile-menu {
@@ -67,6 +68,7 @@ h1 {
   padding: 6px 10px;
   z-index: 800;
 }
+
 /* dismiss toggle */
 .second-menu {
   display: none;
@@ -84,6 +86,7 @@ h1 {
   right: 0;
   z-index: 900;
 }
+
 /************ links animation/effects ************/
 
 .mobile-menu a:visited,
@@ -91,6 +94,7 @@ h1 {
 .mobile-menu a:active {
   color: #eee;
 }
+
 .mobile-menu a:hover {
   color: var(--secondry-color);
   -webkit-transition: all ease 150ms;
@@ -108,6 +112,7 @@ a:active {
   -webkit-transition: all ease 150ms;
   transition: all ease 150ms;
 }
+
 #social_media li:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -148,6 +153,7 @@ a:active {
 .right_home {
   margin-left: 300px;
 }
+
 /************ ALBUMS ************/
 
 .album_container {
@@ -197,6 +203,7 @@ a:active {
 #cv *:not(a) {
   color: #353535;
 }
+
 #cv h2 {
   font-weight: bold;
   margin: 34px 0 6px 0;
@@ -213,12 +220,15 @@ a:active {
 /************ Contact ************/
 #contact .showcase {
   display: grid;
-  grid-template-areas: "m c";
+  /* grid-template-columns: auto auto; */
+  grid-template-areas: 'f c';
   grid-gap: 50px;
 }
+
 .map {
-  grid-area: m;
+  grid-area: f;
 }
+
 .home_contact {
   grid-area: c;
 }
@@ -226,13 +236,9 @@ a:active {
 .contact_text {
   margin-bottom: 20px;
 }
+
 .contact_info a {
   display: block;
-}
-.map {
-  width: 100%;
-  height: 605px;
-  border: none;
 }
 
 /************************************ FOOTER ************************************/
@@ -244,26 +250,96 @@ a:active {
   /* Footer height */
   text-align: center;
   padding-right: 40px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 200;
 }
+
 #footer a:link,
 #footer a:visited {
   color: var(--main-color);
 }
+
 #footer a:hover,
 #footer a:active {
   color: green;
 }
-/************************************ Download button ************************************/
-#dl_btn {
-  margin-top: 50px;
-  color: black;
-  letter-spacing: 0.1rem;
-  border: black solid 2px;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: bold;
+
+/************************************ from BOOTSTRAP ************************************/
+
+.form-group {
+  margin-bottom: 1rem;
 }
+
+.form-control {
+  display: block;
+  /* width: 600px; */
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.textarea {
+  width: 100%;
+  height: 300px;
+  min-height: 100px;
+  max-height: 500px;
+  min-width: 500px;
+  max-width: 690px;
+}
+
+.alert {
+  position: relative;
+  /* height: 40px; */
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-danger {
+  color: black;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-success {
+  color: black;
+  background-color: #82caac9f;
+  border-color: #2fc55580;
+}
+
+/************************************ Download button ************************************/
+.btn-on-contact {
+  margin: 0 !important;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin-left: -3px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: 1px solid black;
+  font: 12px/1.2 'Oswald', sans-serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  -webkit-transition: color 0.1s linear 0.05s;
+  transition: color 0.1s linear 0.05s;
+}
+
 .btn {
   display: inline-block;
   padding: 13px 20px;
@@ -272,7 +348,7 @@ a:active {
   position: relative;
   background: transparent;
   border: 1px solid #e1e1e1;
-  font: 12px/1.2 "Oswald", sans-serif;
+  font: 12px/1.2 'Oswald', sans-serif;
   letter-spacing: 0.4em;
   text-align: center;
   text-indent: 2px;
@@ -280,8 +356,35 @@ a:active {
   -webkit-transition: color 0.1s linear 0.05s;
   transition: color 0.1s linear 0.05s;
 }
+
+#contact .btn {
+  padding: 0 !important;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: 1px solid #e1e1e1;
+  font: 12px/1.2 'Oswald', sans-serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  -webkit-transition: color 0.1s linear 0.05s;
+  transition: color 0.1s linear 0.05s;
+}
+
+#dl_btn {
+  margin-top: 50px;
+  color: black;
+  letter-spacing: 0.1rem;
+  border: black solid 2px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+
 .btn::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 50%;
@@ -294,19 +397,23 @@ a:active {
   -webkit-transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
   transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
 }
+
 .btn::after {
   -webkit-transition: border 0.1s linear 0.05s;
   transition: border 0.1s linear 0.05s;
 }
+
 .btn .btn-inner {
   position: relative;
   z-index: 2;
 }
+
 .btn:hover {
   color: #373737;
   -webkit-transition: color 0.1s linear 0s;
   transition: color 0.1s linear 0s;
 }
+
 .btn:hover::before {
   top: 0;
   height: 100%;
@@ -314,6 +421,7 @@ a:active {
   -webkit-transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
   transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
 }
+
 .btn:hover::after {
   border-color: #373737;
   -webkit-transition: border 0.1s linear 0s;

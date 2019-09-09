@@ -1,4 +1,58 @@
 <!-- Development and Design by Reza N -->
+<?php
+	// Message Vars
+	$msg = '';
+	$msgClass = '';
+
+	// Check For Submit
+	if(filter_has_var(INPUT_POST, 'submit')){
+		// Get Form Data
+		$name = htmlspecialchars($_POST['name']);
+		$email = htmlspecialchars($_POST['email']);
+		$message = htmlspecialchars($_POST['message']);
+
+		// Check Required Fields
+		if(!empty($email) && !empty($name) && !empty($message)){
+			// Passed
+			// Check Email
+			if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+				// Failed
+				$msg = 'Please use a valid email';
+				$msgClass = 'alert-danger';
+			} else {
+				// Passed
+				$toEmail = 'support@traversymedia.com';
+				$subject = 'Contact Request From '.$name;
+				$body = '<h2>Contact Request</h2>
+					<h4>Name</h4><p>'.$name.'</p>
+					<h4>Email</h4><p>'.$email.'</p>
+					<h4>Message</h4><p>'.$message.'</p>
+				';
+
+				// Email Headers
+				$headers = "MIME-Version: 1.0" ."\r\n";
+				$headers .="Content-Type:text/html;charset=UTF-8" . "\r\n";
+
+				// Additional Headers
+				$headers .= "From: " .$name. "<".$email.">". "\r\n";
+
+				if(mail($toEmail, $subject, $body, $headers)){
+					// Email Sent
+					$msg = 'Your email has been sent';
+					$msgClass = 'alert-success';
+				} else {
+					// Failed
+					$msg = 'Your email was not sent';
+					$msgClass = 'alert-danger';
+				}
+			}
+		} else {
+			// Failed
+			$msg = 'Please fill in all fields';
+			$msgClass = 'alert-danger';
+		}
+	}
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,12 +64,13 @@
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
+
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-140999279-1");
+      gtag('config', 'UA-140999279-1');
     </script>
 
     <meta
@@ -69,7 +124,7 @@
           <li><a href="inverse.html">Inverse</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="cv.html">CV</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -102,7 +157,7 @@
             <ul class="second_ul">
               <li><a href="about.html">About</a></li>
               <li><a href="cv.html">CV</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.php">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -146,10 +201,44 @@
 
         <div id="contact" class="right_home">
           <div class="showcase">
-            <iframe
-              src="https://snazzymaps.com/embed/112191"
-              class="map"
-            ></iframe>
+            <div class="map">
+<?php if($msg != ''): ?>
+    		<div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+    	<?php endif; ?>
+
+
+      <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                <div class="form-group">
+                  <label>Name</label>
+		      <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+	      	<input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
+                </div>
+                <div class="form-group">
+                  <label>Message</label>
+                  <textarea
+                    name="message"
+                    class="form-control textarea"
+                  ></textarea>
+                </div>
+                <br />
+                <!-- <button type="submit" name="submit" class="btn btn-primary">Submit</button> -->
+
+                <div class="myDlBtn">
+                  <span id="dl_btn" class="btn dl_button_on_cv btn-on-contact">
+                    <button
+                      name="submit"
+                      class="btn-inner"
+                      style="font-weight:100 !important ;color : #1b1b1b !important ;   font-family: 'Open Sans Condensed', sans-serif !important ;
+                      "
+                    >
+                      Submit
+                    </button>
+                  </span>
+                </div>
+            </div>
 
             <div class="home_contact">
               <h1>Contact</h1>
@@ -158,8 +247,17 @@
                   For Sales, CV Information and more please contact me
                 </p>
                 <p>No.116, Khansary Alley, Sangtarashha St, Esfahan, Iran</p>
-                <a href="tel:+989353858517" title="Call">+98 935 385 8517</a>
-                <a href="mailto:mail@aminyousefi.com" title="Email"
+                <a
+                  style="display: inline;"
+                  href="tel:+989353858517"
+                  title="Call"
+                  >+98 935 385 8517</a
+                >
+                <br />
+                <a
+                  style="display: inline;"
+                  href="mailto:mail@aminyousefi.com"
+                  title="Email"
                   >mail@aminyousefi.com</a
                 >
               </div>
@@ -170,7 +268,7 @@
       </div>
       <!-- #content-wrap ENDS -->
 
-      <footer id="footer">
+      <footer id="footer" class="footer-contact">
         Designed by
         <a
           title="Developer LinkedIn"
