@@ -219,6 +219,7 @@
                 <div class="form-group">
                   <label>Message</label>
                   <textarea
+                    style="resize:none"
                     name="message"
                     class="form-control textarea"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
                 </div>
